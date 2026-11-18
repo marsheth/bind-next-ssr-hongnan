@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
 
-const s3 = new S3Client({ region: "us-west-2" });
+const s3 = new S3Client({ region: "us-east-2" });
 
 export async function GET() {
   try {
