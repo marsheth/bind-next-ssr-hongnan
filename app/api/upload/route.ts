@@ -7,7 +7,7 @@ const s3 = new S3Client({ region: "us-east-2" });
 
 export async function GET() {
   try {
-    console.log("BucketArn env:", process.env.BucketArn);
+    console.log("BucketArn env", ":", process.env.BucketArn);
     console.log("Env keys with bucket:", Object.keys(process.env).filter(k => k.toLowerCase().includes("bucket")));
 
     const bucketArn = process.env.BucketArn;
